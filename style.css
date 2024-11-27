@@ -123,429 +123,431 @@ nav {
 .circle-container {
     width: 50%;
     overflow: hidden;
+}
+
+.anime-img {
+    width: 800px;
+    height: 600px;
     position: relative;
 }
-
-.circle {
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    border: 1px solid black;
-    position: absolute;
-}
-
-.circle1 {
-    right: -70px;
-    top: -10px;
-}
-
-.circle2 {
-    left: 0px;
-    top: 180px;
-}
-
-/* .m-circle{
-    width: 240px;
-    height: 240px;
-    border: 1px dashed black;
-    border-radius: 0 100% 0 100%;
-    position: absolute;
-    top: 200px;
-    left: 260px;
-    transform: rotate(10deg);
-} */
 
 .small {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    position: absolute;
     z-index: 999;
 }
 
 .s1 {
     background-color: #142E36;
-    top: 470px;
-    left: 480px;
+    position: absolute;
+    top: 14%;
+    right: 23%;
     animation: move-s1 5s infinite linear;
 }
 
 .s2 {
     background-color: #9969DB;
-    top: 290px;
-    left: 450px;
+    position: absolute;
+    top: 33%;
+    right: 9%;
     animation: move-s2 5s infinite linear;
 }
 
 .s3 {
-    background-color: #405987;
-    top: 170px;
-    left: 295px;
+    background-color: #D67514;
+    position: absolute;
+    top: 70%;
+    right: 10%;
     animation: move-s3 5s infinite linear;
 }
 
 .s4 {
-    background-color: #D67514;
-    top: 350px;
-    left: 320px;
+    background-color: #405987;
+    position: absolute;
+    top: 50%;
+    right: 23.5%;
     animation: move-s4 5s infinite linear;
 }
 
- @keyframes move-s1{
+@keyframes move-s1 {
     0% {
-        top: 470px;
-        left: 480px; 
+        top: 14%;
+        right: 23%;
     }
+
     25% {
-        top: 290px;
-        left: 450px; 
+        top: 50%;
+        right: 23.5%;
     }
+
     50% {
-        top: 170px;
-        left: 295px; 
+        top: 70%;
+        right: 10%;
     }
+
     75% {
-        top: 350px;
-        left: 320px; 
+        top: 33%;
+        right: 9%;
     }
+
     100% {
-        top: 470px;
-        left: 480px; 
+        top: 14%;
+        right: 23%;
     }
 }
 
-@keyframes move-s2{
-    0%{
-        top: 290px;
-        left: 450px;
+@keyframes move-s2 {
+    0% {
+        top: 33%;
+        right: 9%;
     }
-    25%{
-        top: 170px;
-        left: 295px;
+
+    25% {
+        top: 14%;
+        right: 23%;
     }
-    50%{
-        top: 350px;
-        left: 320px;
+
+    50% {
+        top: 50%;
+        right: 23.5%;
     }
-    75%{
-        top: 470px;
-        left: 480px;
+
+    75% {
+        top: 70%;
+        right: 10%;
     }
-    100%{
-        top: 290px;
-        left: 450px;
-    }
-}
- 
-@keyframes move-s3{
-    0%{
-        top: 170px;
-        left: 295px;
-    }
-    25%{
-        top: 350px;
-        left: 320px;
-    }
-    50%{
-        top: 470px;
-        left: 480px;
-    }
-    75%{
-        top: 290px;
-        left: 450px;
-    }
-    100%{
-        top: 170px;
-        left: 295px;
+
+    100% {
+        top: 33%;
+        right: 9%;
     }
 }
 
-@keyframes move-s4{
-    0%{
-        top: 350px;
-        left: 320px;
+@keyframes move-s3 {
+    0% {
+        top: 70%;
+        right: 10%;
     }
-    25%{
-        top: 470px;
-        left: 480px;
+
+    25% {
+        top: 33%;
+        right: 9%;
     }
-    50%{
-        top: 290px;
-        left: 450px;
+
+    50% {
+        top: 14%;
+        right: 23%;
     }
-    75%{
-        top: 170px;
-        left: 295px;
+
+    75% {
+        top: 50%;
+        right: 23%;
     }
-    100%{
-        top: 350px;
-        left: 320px;
+
+    100% {
+        top: 70%;
+        right: 10%;
     }
-} 
+}
+
+@keyframes move-s4 {
+    0% {
+        top: 50%;
+        right: 23.5%;
+    }
+
+    25% {
+        top: 70%;
+        right: 10%;
+    }
+
+    50% {
+        top: 33%;
+        right: 9%;
+    }
+
+    75% {
+        top: 14%;
+        right: 23%;
+    }
+
+    100% {
+        top: 50%;
+        right: 23.5%;
+    }
+}
 
 /* Media query for animation */
 @media screen and (max-width: 1442px) {
-    .s2 {
-        top: 270px;
-        left: 440px;
-    }
-
-    .s3 {
-        left: 260px;
-    }
-
-    .s4 {
-        top: 360px;
-        left: 285px;
-    }
-
-    @keyframes move-s1 {
-        0% {
-            top: 470px;
-            left: 480px;
-        }
-
-        25% {
-            top: 270px;
-            left: 440px;
-        }
-
-        50% {
-            top: 170px;
-            left: 260px;
-        }
-
-        75% {
-            top: 360px;
-            left: 285px;
-        }
-
-        100% {
-            top: 470px;
-            left: 480px;
-        }
-    }
-
-    @keyframes move-s2 {
-        0% {
-            top: 270px;
-            left: 440px;
-        }
-
-        25% {
-            top: 170px;
-            left: 260px;
-        }
-
-        50% {
-            top: 360px;
-            left: 285px;
-        }
-
-        75% {
-            top: 470px;
-            left: 480px;
-        }
-
-        100% {
-            top: 270px;
-            left: 440px;
-        }
-    }
-
-    @keyframes move-s3 {
-        0% {
-            top: 170px;
-            left: 260px;
-        }
-
-        25% {
-            top: 360px;
-            left: 285px;
-        }
-
-        50% {
-            top: 470px;
-            left: 480px;
-        }
-
-        75% {
-            top: 270px;
-            left: 440px;
-        }
-
-        100% {
-            top: 170px;
-            left: 260px;
-        }
-    }
-
-    @keyframes move-s4 {
-        0% {
-            top: 360px;
-            left: 285px;
-        }
-
-        25% {
-            top: 470px;
-            left: 480px;
-        }
-
-        50% {
-            top: 270px;
-            left: 440px;
-        }
-
-        75% {
-            top: 170px;
-            left: 260px;
-        }
-
-        100% {
-            top: 360px;
-            left: 285px;
-        }
-    }
-} 
-
-@media screen and (max-width: 1026px) {
-    .hero-section{
-        height: fit-content;
-        padding-bottom: 50px;
-        padding-right: 50px;
-    }
-    .circle {
-        width: 400px;
-        height: 400px;
-    }
-
     .s1 {
-        top: 370px;
-        left: 385px;
+        top: 13%;
+        right: 21%;
     }
 
     .s2 {
-        top: 220px;
-        left: 320px;
+        top: 35%;
+        right: 6%;
     }
 
     .s3 {
-        left: 145px;
+        top: 67%;
+        right: 8%;
     }
 
     .s4 {
-        top: 320px;
-        left: 210px;
+        top: 50%;
+        right: 22%;
     }
 
     @keyframes move-s1 {
         0% {
-            top: 370px;
-            left: 385px;
+            top: 13%;
+            right: 21%;
         }
 
         25% {
-            top: 220px;
-            left: 320px;
+            top: 50%;
+            right: 22%;
         }
 
         50% {
-            top: 170px;
-            left: 145px;
+            top: 67%;
+            right: 8%;
         }
 
         75% {
-            top: 320px;
-            left: 210px;
+            top: 35%;
+            right: 6%;
         }
 
         100% {
-            top: 370px;
-            left: 385px;
+            top: 13%;
+            right: 21%;
         }
     }
 
     @keyframes move-s2 {
         0% {
-            top: 220px;
-            left: 320px;
+            top: 35%;
+            right: 6%;
         }
 
         25% {
-            top: 170px;
-            left: 145px;
+            top: 13%;
+            right: 21%;
         }
 
         50% {
-            top: 320px;
-            left: 210px;
+            top: 50%;
+            right: 22%;
         }
 
         75% {
-            top: 370px;
-            left: 385px;
+            top: 67%;
+            right: 8%;
         }
 
         100% {
-            top: 220px;
-            left: 320px;
+            top: 35%;
+            right: 6%;
         }
     }
 
     @keyframes move-s3 {
         0% {
-            top: 170px;
-            left: 145px;
+            top: 67%;
+            right: 8%;
         }
 
         25% {
-            top: 320px;
-            left: 210px;
+            top: 35%;
+            right: 6%;
         }
 
         50% {
-            top: 370px;
-            left: 385px;
+            top: 13%;
+            right: 21%;
         }
 
         75% {
-            top: 220px;
-            left: 320px;
+            top: 50%;
+            right: 22%;
         }
 
         100% {
-            top: 170px;
-            left: 145px;
+            top: 67%;
+            right: 8%;
         }
     }
 
     @keyframes move-s4 {
         0% {
-            top: 320px;
-            left: 210px;
+            top: 50%;
+            right: 22%;
         }
 
         25% {
-            top: 370px;
-            left: 385px;
+            top: 67%;
+            right: 8%;
         }
 
         50% {
-            top: 220px;
-            left: 320px;
+            top: 35%;
+            right: 6%;
         }
 
         75% {
-            top: 170px;
-            left: 145px;
+            top: 13%;
+            right: 21%;
         }
 
         100% {
-            top: 320px;
-            left: 210px;
+            top: 50%;
+            right: 22%;
         }
     }
 }
+
+@media screen and (max-width: 1026px) {
+    .hero-section {
+        height: fit-content;
+    }
+
+    .anime-img {
+        width: 500px;
+        height: 700px;
+    }
+
+    .s1 {
+        top: 28%;
+        right: 24%;
+    }
+
+    .s2 {
+        top: 50%;
+        right: 6%;
+    }
+
+    .s3 {
+        top: 83%;
+        right: 8%;
+    }
+
+    .s4 {
+        top: 63%;
+        right: 26%;
+    }
+
+    @keyframes move-s1 {
+        0% {
+            top: 28%;
+            right: 24%;
+        }
+
+        25% {
+            top: 63%;
+            right: 26%;
+        }
+
+        50% {
+            top: 83%;
+            right: 8%;
+        }
+
+        75% {
+            top: 50%;
+            right: 6%;
+        }
+
+        100% {
+            top: 28%;
+            right: 24%;
+        }
+    }
+
+    @keyframes move-s2 {
+        0% {
+            top: 50%;
+            right: 6%;
+        }
+
+        25% {
+            top: 28%;
+            right: 24%;
+        }
+
+        50% {
+            top: 63%;
+            right: 26%;
+        }
+
+        75% {
+            top: 83%;
+            right: 8%;
+        }
+
+        100% {
+            top: 50%;
+            right: 6%;
+        }
+    }
+
+    @keyframes move-s3 {
+        0% {
+            top: 83%;
+            right: 8%;
+        }
+
+        25% {
+            top: 50%;
+            right: 6%;
+        }
+
+        50% {
+            top: 28%;
+            right: 24%;
+        }
+
+        75% {
+            top: 63%;
+            right: 26%;
+        }
+
+        100% {
+            top: 83%;
+            right: 8%;
+        }
+    }
+
+    @keyframes move-s4 {
+        0% {
+            top: 63%;
+            right: 26%;
+        }
+
+        25% {
+            top: 83%;
+            right: 8%;
+        }
+
+        50% {
+            top: 50%;
+            right: 6%;
+        }
+
+        75% {
+            top: 28%;
+            right: 24%;
+        }
+
+        100% {
+            top: 63%;
+            right: 26%;
+        }
+    }
+}
+
 /* animation media query ends here */
 
 /* image section */
@@ -896,11 +898,12 @@ input {
 }
 
 @media screen and (max-width: 1018px) {
-    .hero-sec-tex{
+    .hero-sec-tex {
         width: 100%;
+        padding-right: 50px;
     }
 
-    .circle-container{
+    .circle-container {
         display: none;
     }
 
